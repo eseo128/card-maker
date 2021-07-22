@@ -24,7 +24,7 @@ const Login = ({ authService }) => {
   useEffect(() => {
     authService //
       .onAuthChange(user => {
-        user && goToMaker(user.uid);
+        user && goToMaker(user.uid); //로그인이 된 상태이면 홈으로 가도 로그인상태로 유지
     })
   });
 
