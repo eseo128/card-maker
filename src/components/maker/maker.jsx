@@ -6,7 +6,7 @@ import Header from '../header/header';
 import Preview from '../preview/preview';
 import styles from './maker.module.css';
 
-const Maker = ({ authService }) => {
+const Maker = ({ FileInput, authService }) => {
     const [cards, setCards] = useState({
         //배열이 아닌 오브젝트 형태로 관리하기 
         // *배열도 가능하지만, 배열로 하면 맵핑할 때 시간이 오래 걸릴 수도 있으니까 오브젝트를 이용하면 빠르게 가능
@@ -84,7 +84,13 @@ const Maker = ({ authService }) => {
         <section className={styles.maker}>
             <Header onLogout={onLogout} />
             <div className={styles.container}>
-                <Editor cards={cards} addCard={createOrUpdateCard} updateCard={createOrUpdateCard} deleteCard={deleteCard} />
+                <Editor
+                    FileInput={FileInput}
+                    cards={cards}
+                    addCard={createOrUpdateCard}
+                    updateCard={createOrUpdateCard}
+                    deleteCard={deleteCard}
+                />
                 <Preview cards={cards} />
             </div>
             <Footer />
