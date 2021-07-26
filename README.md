@@ -18,7 +18,6 @@
 - Firebase의 Auth를 이용하여 Google, Github으로 간편로그인을 할 수 있음
 - firebase.js 파일을 생성하여 SDK를 불러온 뒤 Auth와 Database를 사용하기위해 export함
 - Cloudinary를 이용하여 이미지 파일을 업로드합니다
-- API Key를 숨기기 위해 .env 파일 사용
 - PostCSS로 CSS 스타일링 모듈화
 - Netlify로 배포하기 (깃허브 페이지보다 훨씬 사용범위가 넓었고 yarn을 통해 쉽게 배포할 수 있다)
 
