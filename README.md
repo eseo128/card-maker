@@ -38,7 +38,7 @@
 - Maker 컴포넌트가 마운트 되면 CardRepository 클래스에 syncCards 함수를 호출하여 해당 카드들을 불러와서 cards State에 저장한다.<br>
 - 카드를 delete 버튼으로 삭제할 수 있다.<br>
 - logout 버튼으로 로그아웃이 가능하며, 로그아웃 시 로그인 화면으로 돌아간다. <br>
-- 배포 사이트 : 
+- 배포 사이트 : https://es-card-maker.netlify.app
 
 # images
   ![image](https://user-images.githubusercontent.com/34049770/126957899-7da7eb83-2763-4276-880c-360d9d8d2ed7.png)
